@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="taxForm">
+        <div class="title">Tax Calculator</div>
+        <div class="input-container ic1">
+            <input id="age" class="input" type="number" placeholder=" " / required>
+            <div class="cut"></div>
+            <label for="age" class="placeholder">Age</label>
+        </div>
+        <div class="input-container ic2">
+            <input id="income" class="input" type="number" placeholder=" " /  required>
+            <div class="cut"></div>
+            <label for="income" class="placeholder">Gross Annual Income:</label>
+        </div>
+        <div class="input-container ic2">
+            <input id="extraIncome" class="input" type="number" placeholder=" " / required>
+            <div class="cut"></div>
+            <label for="extraIncome" class="placeholder">Extra Income:</label>
+        </div>
+        <div class="input-container ic2">
+            <input id="deductions" class="input" type="number" placeholder=" " / required>
+            <div class="cut"></div>
+            <label for="deductions" class="placeholder">Deductions</label>
+        </div>
+        <button type="submit" class="submit">submit</button>
+         </form>
+    <div class="card">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="taxResult"></p>
+            </div>
+        </div>  
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html
